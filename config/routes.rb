@@ -1,4 +1,12 @@
 MyDemo::Application.routes.draw do
+  resources :randomtessses
+
+  resources :yahooposts
+
+  resources :sinaposts
+
+  resources :microposts
+
   resources :users
 
   get "welcome/index"

@@ -1,0 +1,25 @@
+<h1>Listing yahooposts</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @yahooposts.each do |yahoopost| %>
+  <tr>
+    <td><%= yahoopost.content %></td>
+    <td><%= yahoopost.user_id %></td>
+    <td><%= link_to 'Show', yahoopost %></td>
+    <td><%= link_to 'Edit', edit_yahoopost_path(yahoopost) %></td>
+    <td><%= link_to 'Destroy', yahoopost, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Yahoopost', new_yahoopost_path %>

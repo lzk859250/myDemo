@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @yahoopost.content %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @yahoopost.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_yahoopost_path(@yahoopost) %> |
+<%= link_to 'Back', yahooposts_path %>
